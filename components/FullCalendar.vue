@@ -25,7 +25,13 @@
                     return true
                 },
             },
-
+			
+			lang: {
+                default() {
+                    return 'fi'
+                },
+            },
+			
             selectable: {
                 default() {
                     return true
@@ -75,6 +81,7 @@
                     header: this.header,
                     defaultView: this.defaultView,
                     editable: this.editable,
+					lang: this.lang,
                     selectable: this.selectable,
                     selectHelper: this.selectHelper,
                     aspectRatio: 2,
