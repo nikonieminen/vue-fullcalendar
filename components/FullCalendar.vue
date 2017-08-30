@@ -26,7 +26,7 @@
                 },
             },
 			
-			lang: {
+            lang: {
                 default() {
                     return 'fi'
                 },
@@ -37,7 +37,13 @@
                     return true
                 },
             },
-
+               
+            unselectAuto: {
+                default(){
+                    return true
+                },
+            },
+              
             selectHelper: {
                 default() {
                     return true
@@ -88,6 +94,7 @@
                     timeFormat: 'HH:mm',
                     events: this.events,
                     eventSources: this.eventSources,
+                    unselectAuto: true,
 
                     eventRender(event, element, view) {
                         if (this.sync) {
